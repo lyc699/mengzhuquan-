@@ -1,0 +1,46 @@
+.cardDetail{
+    ._v-container{
+        .gradient(180deg,#f97a64,#f84c53);
+        padding: 20px;
+        >._v-content{
+            >.pull-to-refresh-layer{
+                height: 80px;
+                margin-top: -80px;
+            }
+        }
+    }
+    img{
+        width: 50px;
+        &.banner{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    .weui-cells{
+        background-color: rgba(00, 00, 00, 0);
+        .weui-cell{
+            background-color: @white;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            .weui-cell__ft{
+                a {
+                    color: @aColor;
+                }
+                &:after{
+                    border-color: @aColor;
+                }
+            }
+            .vux-label{
+                color: @black;
+                font-size: 16px;
+            }
+            .weui-cell__hd{
+                margin-right: 5px;
+            }
+        }
+    }
+    .noData{
+        text-align: center;
+        color: @gray;
+    }
+}

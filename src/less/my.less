@@ -1,0 +1,181 @@
+.my{
+    .head-cell {
+        .weui-cells {
+            margin-top: 0 !important;
+            background-color: @color;
+            clip-path: ellipse(120% 97% at 50% 0);
+            color: @white;
+            height: 180px;
+            margin: 0 0 20px;
+            .vux-label-desc {
+                color: @white;
+            }
+            .weui-cell {
+                height: 180px;
+                &:after{
+                    height: 0;
+                }
+            }
+            .vux-label  {
+                color: @white;
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+            .weui-cell_access{
+                .weui-cell__ft{
+                    &:after{
+                        border-color:  @white !important;
+                    }
+                }
+            }
+        }
+    }
+    .weui-cells {
+        .icon {
+            width: 16px;
+            margin-right: 16px !important;
+        }
+        .headImg {
+            width: 64px;
+            height: 64px;
+            margin-right: 15px !important;
+            border-radius: 50%;
+        }
+        .vux-label  {
+            font-size: 14px;
+            color: @black;
+        }
+    }
+}
+
+//设置页面样式
+.setting .weui-cell__hd{
+  width: 24px;
+  margin-right: 20px;
+}
+.setting .weui-cell:before{
+  border-top-width: 0!important;
+}
+.setting .weui-cell_access .weui-cell__ft{
+  color: @gray !important;
+  padding-right: 20px !important;
+}
+.setting-cnt{
+  padding: 30px 0;
+  color: @cell-label-color;
+  font-size: 16px;
+  text-align: center;
+}
+.setting-cnt img{
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+.setting-cnt p.mt5{
+  color: @gray;
+  font-size: 12px;
+}
+.signOut-btn{
+  width: 86%;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  border: 1px solid @gray;
+  border-radius: 4px;
+  color: @gray;
+  margin: 10px auto;
+}
+.weui-dialog__btn_primary {
+  color: @tab-color !important;
+}
+
+//关注公众号页面样式
+.follow-cnt{
+  padding: 44px 15px 36px 15px;
+}
+.follow-cnt p{
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.follow-cnt div{
+  text-align: center;
+}
+.follow-btn{
+  width: 250px;
+  height: 50px;
+  margin: 50px auto 0;
+  line-height: 50px;
+  font-size: 18px;
+  color: @white;
+  background-color: @color;
+  border-radius: 25px;
+  a{
+    color: @white;
+  }
+}
+
+//常见问题
+.problem-module-tit{
+  margin-top: 8px;
+  height: 56px;
+  line-height: 56px;
+  font-size: 14px;
+  color: @gray;
+  padding: 0 16px;
+}
+.problem-list{
+  font-size: 14px;
+}
+.problem-list-tit {
+  height: 52px;
+  line-height: 52px;
+  color: @cell-label-color;
+  padding: 0 16px;
+  background-color: @bgWhite;
+}
+.problem-list-tit img{
+  width: 24px;
+  vertical-align: middle;
+  transition: all 0.3s linear;
+  /* Firefox 4 */
+  -moz-transition: all 0.3s linear;
+  /* Safari and Chrome */
+  -webkit-transition: all 0.3s linear;
+  /* Opera */
+  -o-transition: all 0.3s linear;
+}
+.up {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -moz-transform: rotate(90deg); /* Firefox */
+  -webkit-transform: rotate(90deg); /* Safari 和 Chrome */
+  -o-transform: rotate(90deg); /* Opera */
+}
+.problem-list-tit span{
+  vertical-align: middle;
+}
+.problem-list-cnt{
+  padding: 0 16px;
+  background-color: @bgF5;
+  color: #959699;
+}
+.problem-list-cnt p{
+  margin: 12px 0 24px;
+}
+.slide {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .4s cubic-bezier(0, 1, 0, 1) -.1s;
+  /* Firefox 4 */
+  -moz-transition: max-height .4s cubic-bezier(0, 1, 0, 1) -.1s;
+  /* Safari and Chrome */
+  -webkit-transition: max-height .4s cubic-bezier(0, 1, 0, 1);
+  /* Opera */
+  -o-transition: max-height .4s cubic-bezier(0, 1, 0, 1) -.1s;
+}
+.animate {
+  max-height: 999px;
+  transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
+  transition-delay: 0s;
+}

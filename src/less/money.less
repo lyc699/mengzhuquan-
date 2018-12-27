@@ -1,0 +1,114 @@
+.money{
+    &>div{
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    background-color: @bgColor;
+    .product_block{
+        width: 48%;
+        background-color: @white;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        .shadowBox( 0 0 3px 0 @gray);
+        padding: 10px;
+        text-align: center;
+        &>img{
+            width: 100px;
+            margin-bottom: 5px;
+            height: 25px;
+        }
+        &>p{
+            color: @gray;
+            font-size: 12px;
+            &:first-of-type{
+                overflow: hidden;/*超出部分隐藏*/
+                white-space: nowrap;/*不换行*/
+                text-overflow:ellipsis;/*超出部分文字以...显示*/
+            }
+        }
+        .intro_block{
+            display: flex;
+            font-size: 12px;
+            justify-content: space-between;
+            color: @gray;
+            div{
+                width: 50%;
+                &:first-of-type{
+                    border-right: 1px solid @gray-1;
+                }
+            }
+            p{
+                &:last-of-type{
+                    color: @color-1;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .vux-circle {
+            height: 75px;
+            margin: 20px 0;
+            overflow: hidden;
+            svg{
+                transform:rotate(240deg);
+                -ms-transform:rotate(240deg); 	/* IE 9 */
+                -moz-transform:rotate(240deg); 	/* Firefox */
+                -webkit-transform:rotate(240deg); /* Safari 和 Chrome */
+                -o-transform:rotate(240deg); 	/* Opera */
+                width: 100px;
+                height: 100px;
+            }
+            .vux-circle-content{
+                p{
+                    margin-top: 20px;
+                    font-size: 12px;
+                    &:last-of-type{
+                        margin-top: 0;
+                        color: #ea5a57;
+                        font-size: 20px;
+                        font-weight: bold;
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        &>button{
+            background-color: #f3bb39;
+            border: none;
+            color: #a02627;
+            padding: 3px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            .shadowBox(1px 2px 3px 0 @buttonBorder);
+            span{
+                background-color: #e54851;
+                height: 15px;
+                width: 15px;
+                border-radius: 15px;
+                font-size: 10px;
+                line-height: 15px;
+                display: inline-block;
+                margin-left: 5px;
+                position: relative;
+                top: 2px;
+                &:before{
+                    content: '';
+                    width:0; 
+                    height:0; 
+                    border-top:3px solid transparent;
+                    border-bottom: 3px solid transparent;
+                    border-left: 5px solid @white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -3px;
+                    margin-left: -1px;
+                }
+            }
+            
+        }
+    }
+}

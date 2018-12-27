@@ -1,0 +1,543 @@
+.indexContainer{
+  overflow-x:scroll;
+  .tag{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    width: 100%;
+    .vux-badge{
+      border-radius:3px;
+      background:@gray-2;
+      border:1px solid @gray-2;
+      color:@black-1;
+      padding:6px;
+      margin-right:10px;
+      font-size:14px;
+      width:20%;
+      min-width: 20%;
+      max-width: 20%;
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &:first-of-type{
+        margin-left: 20px;
+      }
+    }
+  }
+  & .vux-slider{
+    &>.vux-indicator{
+      &>a{
+        &>.vux-icon-dot{
+          &.active{
+            background: @white;
+          }
+        }
+      }
+    }
+    & .vux-indicator-right{
+      &>a{
+        &>.vux-icon-dot{
+          &.active{
+             background: @white; 
+          }
+        }
+      } 
+    }
+  }
+  & .newsFlash{
+    width: 100%;
+    height: 32px;
+    
+    padding-left: 16px;
+    background: @white;
+    &>img{
+      width: 31px;
+      height: 14px;
+      margin-top: 9px;
+      margin-right: 5px;
+    }
+//  &>span{
+//    font-size: 12px;
+//    &>i{
+//      color: @color-1;
+//    }
+//  }
+    &>div{
+      display: block;
+      position: relative;
+      height: 32px;
+      line-height: 32px;
+      overflow: hidden;
+      &>ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        &>li{
+          font-size: 12px;
+          &>i{
+            color: @color-1;
+         }
+        }
+        &.marquee_top{
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
+          margin-top: -32px;
+        }
+      }
+    }
+  }
+  & .advTip{
+    background-color: @tipBg;
+    color: @yellowColor;
+    position: relative;
+    z-index: 999;
+  }
+  & article{
+    padding-bottom: 30px;
+//  padding: 0px 16px 30px;
+    &>p{
+      padding: 12px 16px;
+      background-color: @white;
+      border-top: 1px solid @bgColor;
+      &>span{
+       
+        padding-left: 10px;
+        &:first-child{
+          padding-left: 0px;
+        }
+        &>img{
+          width: 100%;
+        }
+      }
+    }
+    &>h3{
+      padding: 5px 16px;
+      margin-top: 16px;
+      background: @white;
+      &>img{
+        width: 63px;
+      }
+      .right{
+        float: right;
+        font-size: 12px;
+        color: @gray;
+      }
+    }
+//  &>div{
+      &>div{
+        background: @white;
+        border-top: 1px solid @bgColor;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 14px 16px 8px;
+//      .roundedCorners(4px);
+        &:first-child{
+          margin-top: 10px;
+        }
+        &>p{
+//        width: 40px;
+          &>img{
+            width: 48px;
+            height: 48px;
+            border-radius: 5px;
+          }
+          &>label{
+            padding-left: 12px;
+            &>b{
+              font-size: 16px;
+              font-weight: 100;
+              &>span{
+                border:1px solid @gray;
+                font-size: 10px;
+                padding: 2px 5px;
+                border-radius: 5px;
+                margin-left: 5px;
+              }
+            }
+            &>span{
+              display: block;
+              margin-top: 5px;
+              font-size: 14px;
+              color: @black-1;
+            }
+          }
+          &>span{
+            text-align: center;
+            padding-top: 8px;
+            &>i{
+              display: block;
+              font-size: 14px;
+              line-height: 2;
+            }
+            &>.btn_bg{
+              background-color: @yellowColor;
+              color: @white;
+              border-radius: 5px;
+              position: relative;
+              z-index: 3;
+              width: 100px;
+              margin: 0 auto;
+            }
+            &>strong{
+              font-weight: 100;
+              font-size: 18px;
+              color: @yellowColor;
+              &>span{
+                color: @black-1;
+                font-size: 10px;
+              }
+            }
+            &>span{
+              font-size: 13px;
+              &>i, &>b{
+                font-size: 20px;
+                font-weight: 100;
+              }
+              &>i{
+                font-size: 14px;
+                color: @blueColor;
+              }
+            }
+          }
+        }
+//      &>p{
+//        padding-left: 12px;
+//        margin-top: -3px;
+//        &>i{
+//          display: block;
+//          font-size: 12px;
+//          color: #ADB2B9;
+//          margin-top: 5px;
+//        }
+//        &>label{
+//          
+//      &>span{
+////        padding-left: 12px;
+//        &>b{
+//          font-size: 16px;
+//          font-weight: 100;
+//          &>i{
+//            font-size: 12px;
+//            color: @gray;
+//          }
+//        }
+//        &>strong{
+//          display: block;
+//          font-size: 20px;
+//          font-weight: 100;
+//          color: @yellowColor;
+//          margin-top: 6px;
+////          margin: 6px 0 8px;
+//          &>i{
+//            font-size: 12px;
+//            color: @black-1;
+//          }
+//        }
+//        &>i{
+//          display: block;
+//          font-size: 12px;
+//          color: #ADB2B9;
+//        }
+//      }
+//      &>span{
+////        padding-top: 3px;
+//        &>span{
+//          font-size: 12px;
+//        }
+//        &>i{
+//          display: block;
+//          font-size: 14px;
+//          margin-top: 12px;
+//          &>b{
+//            font-weight: 100;
+//            color: @blueColor;
+//          }
+//        }
+//      }
+//      }}
+      }
+//  }
+  }
+  & .noData{
+    font-size: 14px;
+    color: @gray;
+    text-align: center;
+  }
+  .active{
+    width: 60px;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 50%;
+    right: 10px;
+  }
+}
+.proDetContainer{
+  padding-bottom: 30px;
+  &>div{
+    padding: 17px 16px;
+    &>p{
+      padding: 13px 0;
+      &>img{
+        width: 48px;
+        height: 48px;
+        border-radius: 5px;
+      }
+      &.multiHigh{
+        &>label{
+          padding-left: 16px;
+          color: @black-1;
+          &>b{
+            font-size: 16px;
+            font-weight: 100;
+          }
+          &>span{
+            display: block;
+            font-size: 13px;
+            margin-top: 10px;
+          }
+        }
+        &>span{
+          padding-top: 27px;
+          &>label, &>i{
+            font-size: 13px;
+          }
+        }
+      }
+      &.hasLine{
+        border-top: 1px solid @lineColor;
+        &>label{
+          font-size: 14px;
+          line-height: 1.8;
+          &>span{
+            display: block;
+          }
+          &>i{
+            font-size: 18px;
+            color: @yellowColor;
+            &>span{
+              font-size: 14px;
+            }
+          }
+          &:last-of-type{
+            i{
+              color: @black-1;
+            }
+          }
+        }
+      }
+    }
+    &>article{
+      .roundedCorners(4px);
+      &>p{
+        padding: 18px 12px;
+        &.applyInput{
+          &>label{
+            &>i{
+              font-size: 14px;
+              color: @gray;
+            }
+            &>span{
+              display: block;
+              font-size: 16px;
+              margin-top: 16px;
+              & .weui-cell{
+                position: relative;
+                display: inline-block;
+                width: 90px;
+                padding: 0;
+                padding-right: 10px;
+                &>.weui-cell__hd{
+                  position: absolute;
+                  color: @gray;
+                  right: 21px;
+                }
+                &>.vux-cell-primary{
+                  & .vux-popup-picker-placeholder{
+                    color: #C9C9C9;
+                    font-size: 14px;
+                  }
+                }
+                &>.weui-cell__ft{
+                  position: absolute;
+//                width: 24px;
+                  height: 14px;
+                  line-height: 10px;
+                  right: -3px;
+                  top: 5px;
+                  &>.weui-icon{
+                    padding: 0;
+                  }
+//                display: inline-block;
+                }
+                & input{
+                  width: 75px;
+                  text-align: center;
+                  font-size: 17px;
+                  color: @aColor;
+                  border: 0;
+                  outline: none;
+                  border-bottom: 1px solid @gray-1;
+                  padding: 0 3px 3px;
+                }
+                & .vux-popup-picker-value{
+                  font-size: 18px;
+                  color: @black-1;
+                }
+              }
+              &>.vux-cell-box{
+                &>.weui-cell{
+                  padding-right: 0;
+                }
+              }
+              
+//            &>b{
+//              font-size: 18px;
+//            } 
+              &>i{
+                color: @gray;
+              }
+              &>img{
+                width: 21px;
+                height: 21px;
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+        &.applyBtn{
+          border-top: 1px solid @lineColor;
+          &>i{
+            font-size: 12px;
+            color: @gray;
+            &>b{
+              font-weight: 100;
+              color: @redColor;
+            }
+          }
+          &>span{
+            display: block;
+            width: 80%;
+            margin: 24px auto;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            background: @yellowColor;
+            color: @white;
+            .shadowBox( 0 0 8px 0 @white);
+          }
+        }
+      }
+      &>label{
+        display: block;
+        font-size: 16px;
+        color: @black-1;
+        margin-top: 6px;
+        padding: 0 12px;
+        text-align: center
+      }
+      &>ul{
+        padding-bottom: 20px;
+        &>li{
+          padding: 14px 12px 13px;
+          &>img{
+            width: 18px;
+            height: 18px;
+            margin-top: 5px;
+          }
+          &>p{
+            padding-left: 5px;
+            &>label{
+              font-size: 14px;
+            }
+            &>span{
+              display: block;
+              font-size: 12px;
+              color: @gray;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.vux-popup-header{
+  & .vux-popup-header-right{
+    color: #EBB30C;
+  }
+}
+.errorBox{
+  width: 100%;
+  &>.weui-toast{
+    background: transparent;
+    opacity: 1;
+    height: auto;
+    min-height: auto;
+    text-align: center;
+    .roundedCorners(0px);
+    padding: 0;
+    &.vux-toast-top{
+      bottom: 40px; 
+    }
+//  position: static;
+//  margin: 0;
+//  -webkit-transform: translateX(0);
+//  -moz-transform: translateX(0);
+//  -o-transform: translateX(0);
+//  transform: translateX(0);
+  }
+  & .weui-icon-success-no-circle{
+    display: none;
+  }
+  & .weui-toast__content{
+    margin: 0;
+    font-size: 14px;
+    color: @gray;
+  }
+}
+.noWhite{
+  & .weui-dialog{
+    background: transparent;
+    overflow: auto;
+  }
+}
+.inviteBox{
+  &>span{
+    display: block;
+    background: url(../../static/images/index/btn_bg.png) no-repeat;
+    background-size: 100% 100%;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 15px;
+    margin: -50px auto;
+    position: relative;
+  }
+}
+.closeBtn{
+  position: absolute;
+  top: -45px;
+  right: 20px;
+  &>img{
+    width: 20px;    
+  }
+  &:after{
+    content: '';
+    height: 37px;
+    width: 1px;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 23px;
+  }
+}

@@ -1,0 +1,173 @@
+.sign{
+    .head_div{
+        text-align: center;
+        .gradient(180deg,#f97a64,#f94050);
+        color: @white;
+        padding: 20px 0;
+        .head_btn{
+            position: relative;
+            height: 100px;  
+            display: table;
+            width: 100%;
+            div{
+                position: relative;
+                top: 40%;
+                z-index: 1;
+                width: 30%;
+                height: 100%;
+                margin: 0 auto;
+            }
+            h3{
+                font-weight: normal;   
+                padding-top: 30%;             
+            }
+            p{
+                font-size: 12px;
+            }
+            img{
+                height: 100%;
+                width: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+        &>h3{
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: normal;
+            img{
+                width: 25px;
+                margin-left: 5px;
+                vertical-align: bottom;
+            }
+        }
+        &>p{
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .vux-slider{
+            margin-top: 15px;
+        }
+        .rules{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    }
+    .day_div{
+        font-size: 10px;
+        padding: 30px 10px 50px;
+        clip-path: ellipse(74% 48% at 50% 50%);
+        background-color: @white;
+        position: relative;
+        z-index: 10;
+        margin-top: -20px;
+        p{
+            text-align: center;
+            color: #c0c0c0;
+        }
+    }
+    .gift_div{
+        margin-top: -30px;
+        position: relative;
+        z-index: 999;
+        background-color: #fff;
+        border-top: 1px solid @gray-2;
+        img{
+            width: 55px;
+        }
+        .vux-label{
+            color: @black;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        button{
+            background-color: @btnBg !important;
+            color: @black !important;
+            padding: 5px 10px;
+            border-radius: 5px;
+            &.disabled{
+                background-color: @lineColor !important;
+            }
+            &.end{
+                background-color: @gray-1 !important;
+            }
+        }
+    }
+}
+.sign_dialog{
+    .weui-dialog {
+        width: 90%;
+        overflow: auto;
+        margin-top: 30%;
+        img{
+            &.flower{
+                width: 110%;
+                height: auto;
+                position: absolute;
+                top: 10px;
+                margin-left: -5%;
+                left: 0;
+                margin-top: -35%;
+            }
+            &.close{
+                width: 30px;
+                position: absolute;
+                right: 0;
+                top: 15px;
+                z-index: 3;
+                margin-top: -35%;
+            }
+            &.dialogBg{
+                margin-top: -30%;
+            }
+        }
+        .dialog_div{
+            background-color: @white !important;
+            padding: 10px;
+            width: 100%;
+            border-bottom-right-radius:5px; 
+            border-bottom-left-radius:5px; 
+            h1{
+                color: @redColor;
+                margin: -20px auto 15px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 2;
+                text-align: left;
+                span{
+                    color: @redColor;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+.dialog1{
+    .weui-dialog {
+        overflow: auto;
+        padding: 25px 10px 15px;
+        img{
+            &.close{
+                width: 30px;
+                position: absolute;
+                bottom: -35px;
+                margin-left: -15px;
+            }
+        }
+        p{
+            text-align: left;
+            border-bottom: 1px solid #f3f3f3;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        a{
+            color: blue
+        }
+    }
+}

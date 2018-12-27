@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+//*variable------------------------------------------------------------------------------*/
+@color:#fcc110;
+@color-1:#FD865B;
+@backgroundcolor:#404044;
+@white:#fff;
+@black:#000;
+@black-1: #404144;
+@placeholdecolor:#e9eaeb;
+@gray:#adb2b9;
+@aColor:#468fee;
+@gray-1:#D0D0D0;
+@lineColor:#EDEDED;
+@redColor: #FF3233;
+@yellowColor: #fa7720;
+@blueColor: #36ADE3;
+@bgWhite:#fff;
+@bgF5:#f5f5f5;
+@cell-label-color: #404144;
+@tab-color: #EBB30C;
+@bgColor:#f7f7f9;
+@buttonBorder:#b85526;
+@gray-2:#f4f4f4;
+@btnBg:#fec81f;
+@tipBg:#fffbe1;
+
+
+//*margin/padding-------------------------------------------------------------------------------*/
+.loopSpacing(@n) when (@n > 0) {
+    //margin
+    .m@{n}{
+        margin:  (@n * 1px)
+    }
+    .mt@{n}{
+        margin-top:  (@n * 1px)
+    }
+    .mr@{n}{
+        margin-right:  (@n * 1px)
+    }
+    .mb@{n}{
+        margin-bottom:  (@n * 1px)
+    }
+    .ml@{n}{
+        margin-left:  (@n * 1px)
+    }
+
+    //padding
+    .p@{n}{
+        padding:  (@n * 1px)
+    }
+    .pt@{n}{
+        padding-top: (@n * 1px)
+    }
+    .pr@{n}{
+        padding-right: (@n * 1px)
+    }
+    .pb@{n}{
+        padding-bottom: (@n * 1px)
+    }
+    .pl@{n}{
+        padding-left: (@n * 1px)
+    }
+
+    //循环调用自身
+    .loopSpacing((@n - 5));
+}
+
+.loopSpacing(70);
+
+//*box-flex*/
+.box{
+    width: 100%;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap
+}
+//*box-items*/
+.box-items{
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+//*flexs*/
+.loopFlex(@n) when (@n > 0) {
+    .flex-@{n}{
+        display: block;
+        -webkit-box-flex:@n;
+        -webkit-flex:@n;
+        -ms-flex:@n;
+        flex:@n;
+        width:0;
+        -webkit-flex-basis:0;
+        -ms-flex-preferred-size:0;
+        flex-basis:0;
+    }
+
+    //循环调用自身
+    .loopFlex((@n - 1));
+}
+
+.loopFlex(6);
+
+//*字体显示*/
+.bold{font-weight:bold;}
+.middle{vertical-align: middle!important;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+//圆角
+.roundedCorners(@radius:5px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+//阴影
+.shadowBox (@params:3px 3px 3px){
+  -webkit-box-shadow: @params;
+  -moz-box-shadow: @params;
+  box-shadow: @params;
+  /*参数说明 投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色*/
+}
+//过渡色
+.gradient(@rollDeg:90deg, @color1:#ff3b2e 0%, @color2:#ff682e 100%){
+  background-image:-webkit-linear-gradient(@rollDeg,@color1,@color2);
+  background-image:linear-gradient(@rollDeg,@color1,@color2);
+  background: -o-linear-gradient(@rollDeg,@color1,@color2);
+  background: -ms-linear-gradient(@rollDeg,@color1,@color2);
+  background: -moz-linear-gradient(@rollDeg,@color1,@color2);
+}
+//*fontsize-------------------------------------------------------------------------------*/
+.loopFontSize(@n) when (@n > 12) {
+    .fs@{n}{
+        font-size:  (@n * 1px)
+    }
+
+    //循环调用自身
+    .loopFontSize((@n - 2));
+}
+
+.loopFontSize(50);
+
+/*btns*/
+.btn{
+    width: 100%;height: 50px;line-height: 50px;border-radius: 50px;background-color: @color;text-align: center;color: @white;font-size: 16px;display: block;border: none;cursor:pointer;
+    box-shadow: 0 3px 8px 0 @color;letter-spacing: 3px;
+}
+
+//*footer nav*/
+.footer{
+    position: fixed;left: 0;bottom: 0;width: 100%;background: #fff;height: 48px;
+    .item{
+        text-align: center;
+    }
+    img{
+        width: 25px;
+    }
+    .active{
+        color: red;
+    }
+}
+
+
+

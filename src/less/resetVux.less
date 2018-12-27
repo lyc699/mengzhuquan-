@@ -1,0 +1,93 @@
+@charset 'UTF-8';
+
+.weui-cells{
+    font-size: 14px!important;
+    margin-top: 0!important;
+    .weui-cell{
+        padding: 20px 17px!important;
+        &:before{
+            right: 15px;
+        }
+        .weui-cell__ft{
+            button{
+                color: @color;
+                border: none;
+                background-color: rgba(00,00,00,0);
+                outline:none;
+                &.disable{
+                    color: @gray;
+                }
+            }
+        }
+    }
+    ::-webkit-input-placeholder {
+        color: @placeholdecolor;
+        font-size: 14px;
+    }
+    :-moz-placeholder {
+        color: @placeholdecolor;
+        font-size: 14px;
+    }
+    ::-moz-placeholder {
+        color: @placeholdecolor;
+        font-size: 14px;
+    }
+    :-ms-input-placeholder {
+        color: @placeholdecolor;
+        font-size: 14px;
+    }
+    &:before,&:after{
+        border: none!important;
+    }
+}
+.weui-cell_access{
+    .weui-cell__ft{
+        color: #E7E7E7;
+        &:after{
+            // border-color:  @arrowColor !important;
+        }
+    }
+}
+.weui-cells_checkbox .weui-icon-checked:before{
+    font-size: 18px!important;
+}
+
+//tab样式
+.vux-tab-container,.vux-tab{
+    height: 50px !important;
+    background-color:@backgroundcolor !important;
+    .vux-tab-item.vux-tab-selected{
+        color: @color !important;
+        border-bottom: 5px solid @color !important;
+    }
+    .vux-tab-ink-bar{
+        background-color: @color !important;
+        height:5px !important;
+    }
+    .vux-tab-item{
+        background: none !important;
+        color:@white !important;
+        font-size: 16px !important;
+    }
+}
+
+.weui-btn:after{
+    border: none !important;
+}
+
+.vux-label {
+  color: @cell-label-color;
+}
+
+
+.weui-tabbar__icon{
+    width: 20px !important;
+    height: 20px !important;
+}
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__label{
+    color: @color !important;
+}
+
+.weui-label {
+    width: 5em !important;
+}

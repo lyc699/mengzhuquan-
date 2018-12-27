@@ -1,0 +1,36 @@
+[
+    {
+        "channelName":"鸟哥笔记",
+        "channelCode":"46300001",
+        "channelVal":"ngbj"
+    },
+    {
+        "channelName":"极光",
+        "channelCode":"46300002",
+        "channelVal":"jiguang"
+    }
+    ,
+    {
+        "channelName":"极光2",
+        "channelCode":"46300003",
+        "channelVal":"jiguang2"
+    }
+    ,
+    {
+        "channelName":"线下流量",
+        "channelCode":"46300004",
+        "channelVal":"xxyl"
+    }
+    ,
+    {
+        "channelName":"盟主圈注册红包活动",
+        "channelCode":"46300005",
+        "channelVal":"hbhd"
+    }
+    ,
+    {
+        "channelName":"有钱365",
+        "channelCode":"46300006",
+        "channelVal":"yq365"
+    }
+]

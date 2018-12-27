@@ -1,0 +1,226 @@
+.ticket{
+    padding: 20px 10px;
+    .num{
+        background-color: red;
+        color: @white;
+        display: inline-block;
+        padding: 5px;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 2px;
+        font-size: 12px;
+        min-width: 15px;
+        &.special{
+            background-color: @aColor;
+        }
+    }
+    .ticketName{
+        font-weight: bold;
+        span{
+            color: @gray;
+            font-weight: normal;
+            margin-left: 5px;
+            b{
+                font-weight: normal;
+                color: @aColor;
+            }
+            &.ticketDate{
+                position: absolute;
+                right: 5px;
+            }
+        }
+        margin-bottom: 10px;
+    }
+    .weui-cells .weui-cell{
+        align-items: flex-start !important;
+    }
+    .weui-cell_access .weui-cell__ft:after{
+        top:36px;
+        margin-top: 0;
+    }
+    .weui-cells{
+        margin-bottom: 10px;
+    }    
+}
+.dream{
+    background-image: url('../../static/images/theme/bg2.png');
+    background-repeat-y: repeat;
+    background-size: 100% auto;
+    &>img{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    &>div{
+        padding: 30px;
+        p{
+            color: #fff;
+        }
+        h1{
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        ul{
+            margin-top: 30px;
+            color: #fff;
+        }
+        li{
+            margin-bottom: 20px;
+            list-style:inside;
+            list-style-type: disc;
+        }
+        .weui-cell.vux-x-input{
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        button.weui-btn{
+            background-color: #7a65e7;
+            color: #fff;
+            margin-top: 30px;
+        }
+    }
+}
+.joy{
+    li{
+        background-color: #f3f3f3;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+.detail{
+    .vux-tab-container, .vux-tab{
+        background-color:@white !important;
+    }
+    .vux-tab-container .vux-tab-item.vux-tab-selected{
+        border-bottom:#428ed4 !important;
+        color: #000 !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+    }
+    .vux-tab-container .vux-tab-ink-bar, .vux-tab .vux-tab-ink-bar{
+        background-color:#428ed4 !important;
+        width: 50px;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .vux-tab .vux-tab-item{
+        color: #000 !important;
+        font-size: 14px !important;
+    }
+    .flex{
+        display: flex;
+        border-top: 1px solid @lineColor;
+        padding: 10px 0;
+        &>div{
+            width: 50%;
+            text-align: center;
+            p{
+                color: @black-1;
+                span{
+                    font-size: 10px;
+                }
+            }
+            h1{
+                font-size: 20px;
+                font-weight: normal;
+                color: @color-1;
+                margin-top: 5px;
+            }
+        }
+    }
+    table{
+        width: 94%;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        tr{
+            height: 13vw;
+        }
+        td{
+            color: #bdbdbd;
+        }
+        thead{
+            td{
+                color: #93511a;
+            }
+        }
+        tbody{
+            tr{
+                background-color: @white;
+                &.bg1{
+                    background-color: #fdf5e3;
+                }
+                td{
+                    &:first-of-type{
+                        color: #93511a;
+                    }
+                    &:last-of-type{
+                        color: #df7161;
+                    }
+                }
+            }
+        }
+    }
+}
+.allHistory{
+    table{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        tr{
+            height: 13vw;
+            background-color: @white;
+        }
+        td{
+            color: #bdbdbd;
+        }
+        thead{
+            td{
+                color: @black-1;
+            }
+        }
+        tbody{
+            tr{
+                background-color: @white;
+                &.bg1{
+                    background-color: #fdf5e3;
+                }
+                td{
+                    &:first-of-type{
+                        color: #bdbdbd;
+                    }
+                    &:last-of-type{
+                        color: #bdbdbd;
+                    }
+                    &.hasAfter:after{
+                        content: " ";
+                        display: inline-block;
+                        height: 6px;
+                        width: 6px;
+                        border-width: 2px 2px 0 0;
+                        border-color: #C8C8CD;
+                        border-style: solid;
+                        -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                        position: relative;
+                        top: -2px;
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .weui-cell_access .weui-cell__ft:after{
+        top:24px;
+        margin-top: 0;
+    }
+}

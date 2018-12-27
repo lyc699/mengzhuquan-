@@ -1,0 +1,117 @@
+.login-btn{
+    margin: 33px 10px 0 10px;
+    .weui-btn{
+        .btn;
+        moz-user-select: -moz-none;
+        -moz-user-select: none;
+        -o-user-select:none;
+        -khtml-user-select:none;
+        -webkit-user-select:none;
+        -ms-user-select:none;
+        user-select:none;        
+        &.weui-btn_default:not(.weui-btn_disabled):active{
+            background-color: #dfab0f; 
+            color: @gray;
+        }
+    }
+}
+.login-link{
+    margin: 12px 26px 0 26px;
+    font-size: 14px;
+    height: 30px;
+    a:last-child{
+        color: @gray; 
+        float: right;
+    }
+    .goRegister{
+        color: @color;    
+    }
+}
+.login-headImg{
+    text-align: center;
+    img{
+        width: 73px;
+        height: 73px;
+        margin: 30px auto 5px;
+    }
+    p{
+        margin-bottom: 30px;
+    }
+}
+.login-tip{
+    font-size: 14px;
+    padding: 10px 17px;
+    color: @gray;
+}
+.login-agreement{
+    font-size: 14px;
+    color: @gray;
+    text-align: center;
+    width: 100%;
+    a{
+        color: @aColor;
+    }
+    &.agreement-position{
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        p{
+            position: absolute;
+            bottom:15px;
+            width: 100%;
+        }
+    }
+    p{        
+        img{
+            height: 20px;
+            width: auto;
+            margin-right: 5px;
+            vertical-align: text-top;
+        }
+    }
+}
+.login-div{
+    background-color: #fafafa;
+}
+.imgCodeBlock{
+    .vux-x-input-right-full{
+        margin-left: 10px;
+        height: 30px;
+        vertical-align: middle;
+        width: 80px;
+        img{
+            height: 100%;
+        }
+    }
+    .weui-dialog__hd {
+        padding: 1.3em 1.6em 1em;
+        .weui-dialog__title{
+            font-size: 16px;
+        }
+    }
+    .weui-dialog__ft{
+        padding: 10px;
+        line-height: 30px;
+        display: -webkit-inline-box;
+        font-size: 14px;
+    }
+    .weui-dialog__ft:after{
+        border-top: 0 !important;
+    }
+    .weui-dialog__btn:after{
+        border-left: 0 !important;
+    }
+    .weui-dialog__btn{
+        border-radius: 7px;
+        margin: 0 5px;
+        padding: 0 30px;
+    }
+    .weui-dialog__btn_default{
+        border: 1px solid @gray;
+    }
+    .weui-dialog__btn_primary{
+        background-color: @color;
+        color: @white !important;
+        border:none;
+    }
+}
